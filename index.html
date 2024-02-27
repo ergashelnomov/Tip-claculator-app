@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <title>TIP CALCULATOR APP</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="logo">
+        <img src="./src/img/logo.png" alt="logo" />
+      </div>
+      <div class="container">
+        <!-- start worker-section -->
+        <section class="worker-setion">
+          <form class="form">
+            <label for="bill-input" class="bill-label">Bill</label>
+            <input
+              type="number"
+              class="bill-input"
+              id="bill-input"
+              value="142.55"
+            />
+            <label>Select Tip %</label>
+            <div class="tip">
+              <button class="tips tip-5">5%</button>
+              <button class="tips tip-10">10%</button>
+              <button class="tips tip-15 active-tip">15%</button>
+              <button class="tips tip-25">25%</button>
+              <button class="tips tip-50">50%</button>
+              <input type="number" placeholder="Custom" class="tip-custom" />
+            </div>
+            <div class="number-people">
+              <label for="number-people">Number of People</label>
+              <input
+                type="number"
+                id="number-people"
+                class="number-people_input"
+                value="5"
+              />
+            </div>
+          </form>
+        </section>
+        <!-- end worker-section -->
+        <!-- start result-section -->
+        <section class="result-section">
+          <div class="result-tip">
+            <h2>Tip Amount</h2>
+            <p class="coment">/ person</p>
+            <p class="result">$4.27</p>
+          </div>
+          <div class="result-tip">
+            <h2>Total</h2>
+            <p class="coment">/ person</p>
+            <p class="result">$32.79</p>
+          </div>
+          <button class="reset-btn">RESET</button>
+        </section>
+        <!-- end result-section -->
+      </div>
+    </div>
+  </body>
+</html>
