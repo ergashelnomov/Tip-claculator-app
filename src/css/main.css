@@ -347,6 +347,11 @@ label {
 .wrapper .container .worker-setion .form .tip .tip-custom:focus {
   border: 2px solid #26c2ae;
 }
+.wrapper .container .worker-setion .form .tip input[type=number]::-webkit-inner-spin-button,
+.wrapper .container .worker-setion .form .tip input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .wrapper .container .worker-setion .form .tip .tip-custom::-webkit-input-placeholder {
   font-size: 24px;
   color: #547878;
@@ -394,6 +399,9 @@ label {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 6px;
+}
+.wrapper .container .worker-setion .form .number-people label {
+  margin-bottom: 6px;
 }
 .wrapper .container .worker-setion .form .number-people .number-people_input {
   max-width: 379px;

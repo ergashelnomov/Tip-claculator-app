@@ -103,6 +103,11 @@ label {
               border: 2px solid #26c2ae;
             }
           }
+          input[type="number"]::-webkit-inner-spin-button,
+          input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
           .tip-custom::placeholder {
             @extend body;
             font-size: 24px;
@@ -119,6 +124,9 @@ label {
           display: flex;
           flex-direction: column;
           gap: 6px;
+          label {
+            margin-bottom: 6px;
+          }
           .number-people_input {
             max-width: 379px;
             height: 48px;
